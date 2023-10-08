@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/recipe.css">
+  <title>Recipe Sharing Page</title>
+</head>
+<body>
+  <header>
+    <h1>Share Your Recipe</h1>
+  </header>
+  <section class="recipe-form">
+    <h2>Add a New Recipe</h2>
+    <form id="recipe-form" enctype="multipart/form-data">
+      <label for="recipe-name">Recipe Name:</label>
+      <input type="text" id="recipe-name" name="recipe-name" required>
+      <label for="recipe-category">Category</label>
+      <select id="recipe-category" name="recipe-category">
+        <option value="appetizer">Appetizer</option>
+        <option value="main-course">Main Course</option>
+        <option value="dessert">Dessert</option>
+        <option value="beverage">Beverage</option>
+        <option value="soup">Soup</option>
+        <option value="paratha">MParatha</option>
+        <option value="Sabzi">Sabzi</option>
+        <option value="rice">Rice</option>
+      </select>
+      <label for="recipe-ingredients">Ingredients:</label>
+      <input id="recipe-ingredients" name="recipe-ingredients" required></textarea>
+      <label for="recipe-steps">Steps:</label>
+      <input id="recipe-steps" name="recipe-steps" required></input>
+      <label for="recipe-image">Image:</label>
+      <input type="file" id="recipe-image" name="recipe-image" accept="image/*" required>
+      <button type="submit">Share Recipe</button>
+    </form>
+  </section>
+</body>
+</html>
